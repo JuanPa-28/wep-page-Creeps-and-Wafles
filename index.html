@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Crepes and Waffles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-container" class="auth-container">
+        <div class="auth-form">
+            <img src="https://www.mambogota.com/wp-content/uploads/2018/05/logo-Crepes-Waffles-01.png" alt="Logo" class="logo">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <p class="auth-link">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Screen -->
+    <div id="register-container" class="auth-container" style="display: none;">
+        <div class="auth-form">
+            <img src="https://www.mambogota.com/wp-content/uploads/2018/05/logo-Crepes-Waffles-01.png" alt="Logo" class="logo">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p class="auth-link">Already have an account? <a href="#" id="show-login">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content (visible after login) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <div class="header-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LKvVxPJXJ434WvuCxH4FRo8c4rnhFxjx1g&s" alt="Logo" class="logo">
+                <h1>Strategy Crepes and Waffles</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#internal">Internal</a></li>
+                        <li><a href="#strategic">Strategic</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#financial">Financial</a></li>
+                        <li><a href="#competition">Competition</a></li>
+                    </ul>
+                </nav>
+                <button id="logout-btn" class="btn logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="leadership" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://static.vecteezy.com/system/resources/previews/014/810/902/non_2x/leadership-line-icon-vector.jpg" alt="Leadership" class="section-icon">
+                    <h2>1. Leadership and Talent Management</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <h3>Problem: Centralized or authoritarian leadership style</h3>
+                    <div class="strategy-content">
+                        <img src="https://previews.123rf.com/images/ylivdesign/ylivdesign2012/ylivdesign201244757/161075039-icono-de-reuni%C3%B3n-de-la-junta-estilo-de-esquema.jpg" alt="Meeting" class="strategy-img">
+                        <p><strong>Strategy:</strong> Encourage participative leadership through regular team meetings where employees can voice opinions and contribute to decisions.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <h3>Problem: Lack of performance recognition</h3>
+                    <div class="strategy-content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SLSK-3oSuWShuR1QiaG8sch8A8mFeff4Ig&s" alt="Award" class="strategy-img">
+                        <p><strong>Strategy:</strong> Implement an employee recognition program with monthly awards, performance bonuses, or public acknowledgment during team briefings.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <h3>Problem: High staff turnover</h3>
+                    <div class="strategy-content">
+                        <img src="https://thumbs.dreamstime.com/b/realizaci%C3%B3n-de-una-encuesta-sobre-el-icono-del-vector-ilustraci%C3%B3n-s%C3%ADmbolo-contorno-aislado-un-signo-l%C3%ADnea-delgada-168188680.jpg" alt="Survey" class="strategy-img">
+                        <p><strong>Strategy:</strong> Conduct regular satisfaction surveys and exit interviews to understand causes and improve working conditions, career growth opportunities, and staff engagement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="internal" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQSMcfjDgyny090l0PvnigndVHFLkgf45fA&s" alt="Internal" class="section-icon">
+                    <h2>2. Internal Problems</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/046/038/343/non_2x/mobile-app-review-icon-with-magnifying-glass-vector.jpg" alt="App" class="strategy-img">
+                        <p><strong>Strategy 1:</strong> Implement a digital ordering system with a user-friendly app or touchscreen kiosks to streamline ordering and reduce wait times.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://thumbs.dreamstime.com/b/icono-de-equipo-t%C3%A9cnico-s%C3%ADmbolo-esquema-plantilla-dise%C3%B1o-ilustraci%C3%B3n-vectorial-para-gr%C3%A1fico-y-web-o-fines-comerciales-269757839.jpg" alt="Team" class="strategy-img">
+                        <p><strong>Strategy 2:</strong> Assign specific staff to table turnover. Create a rotation schedule and train staff to manage cleaning and table prep efficiently.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://thumbs.dreamstime.com/b/desarrollo-de-proyecto-l%C3%ADnea-moderna-icono-del-vector-del-dise%C3%B1o-97663048.jpg" alt="Design" class="strategy-img">
+                        <p><strong>Strategy 3:</strong> Optimize table layout. Use space planning software to redesign layouts and test during off-peak hours to evaluate efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://st.depositphotos.com/1341440/3675/v/950/depositphotos_36757465-stock-illustration-gift-box-vector-black-silhouette.jpg" alt="Gift" class="strategy-img">
+                        <p><strong>Strategy 4:</strong> Offer complementary items like free samples (cookies, mini drinks) to improve customer experience during long waits.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="strategic" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/209/851/non_2x/strategy-icon-design-free-vector.jpg" alt="Strategy" class="section-icon">
+                    <h2>3. Strategic and Business Problems</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/950/589/non_2x/franchise-business-icon-isolated-contour-symbol-illustration-vector.jpg" alt="Franchise" class="strategy-img">
+                        <p><strong>Strategy:</strong> Franchise system. Develop a franchise kit with branding, training, and operational guidelines to expand locations while maintaining quality.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://thumbs.dreamstime.com/b/s%C3%ADmbolo-de-marketing-icono-vector-meg%C3%A1fono-digital-ilustraci%C3%B3n-265981884.jpg" alt="Marketing" class="strategy-img">
+                        <p><strong>Strategy:</strong> Marketing investment. Allocate budget for seasonal campaigns, influencer collaborations, and local advertising.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/226/428/non_2x/eco-friendly-alternative-energy-source-and-waste-recycling-icon-concept-green-eco-earth-black-simple-flat-illustration-isolated-on-white-vector.jpg" alt="Eco" class="strategy-img">
+                        <p><strong>Strategy:</strong> Environmental awareness. Launch a sustainability campaign highlighting eco-friendly practices and customer participation (e.g., discounts for reusable containers).</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://png.pngtree.com/png-vector/20191130/ourmid/pngtree-promotion-icon-png-image_2054400.jpg" alt="Promo" class="strategy-img">
+                        <p><strong>Strategy:</strong> Promotions. Offer weekday deals, combo meals, or limited-time offers promoted through social media and email marketing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technology" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111086.png" alt="Tech" class="section-icon">
+                    <h2>4. Technology and Service Issues</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://previews.123rf.com/images/maxborovkov/maxborovkov1507/maxborovkov150700037/42720220-tejido-social-comunicaci%C3%B3n-red-fondo-poligonal-ilustraci%C3%B3n-del-vector.jpg" alt="Social" class="strategy-img">
+                        <p><strong>Strategy 1:</strong> Assign a social media manager to handle content, respond to messages, and track engagement metrics.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://img.freepik.com/psd-premium/elemento-simbolo-wifi-es-archivo-psd-fondo-transparente_609989-4490.jpg"WiFi" class="strategy-img">
+                        <p><strong>Strategy 2:</strong> Provide WiFi password after purchase by integrating it into digital or paper receipts.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://img.freepik.com/vector-premium/entrega-moderna-icono-linea-red-logistica-transporte-industria-global-caja-envio-carga-mensajero-mensajero-o-repartidor_721440-2442.jpg" alt="Delivery" class="strategy-img">
+                        <p><strong>Strategy 3:</strong> Create an in-house delivery team with GPS tracking to improve delivery times and customer satisfaction.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="financial" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbAYGhvJsdv1ARiEBwEHe2Zd5ikcbxbnJyw&s" alt="Finance" class="section-icon">
+                    <h2>5. Financial Problems</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/019/493/573/non_2x/saving-business-pig-money-sign-financial-success-colored-semi-solid-black-and-white-vector.jpg" alt="Save" class="strategy-img">
+                        <p><strong>Strategy:</strong> Build relationships with local producers for discounts. Adjust menu prices gradually and introduce high-margin combo meals. Monitor inventory to minimize food waste.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competition" class="strategy-section">
+                <div class="section-header">
+                    <img src="https://static.vecteezy.com/system/resources/previews/014/661/510/non_2x/competition-line-icon-vector.jpg" alt="Competition" class="section-icon">
+                    <h2>6. Competition and Customer Problems</h2>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/570/759/non_2x/customer-service-icon-vector.jpg" alt="Service" class="strategy-img">
+                        <p><strong>Strategy 1:</strong> Improve service with training focused on speed, friendliness, and professionalism.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4568/4568320.png" alt="Stand Out" class="strategy-img">
+                        <p><strong>Strategy 2:</strong> Differentiate with rotating menu items, themed nights, or customer engagement events.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <img src="https://static.vecteezy.com/system/resources/previews/018/992/623/non_2x/loyalty-people-value-line-icon-illustration-vector.jpg" alt="Loyalty" class="strategy-img">
+                        <p><strong>Strategy 3:</strong> Implement a digital loyalty program using QR codes or apps where customers earn points redeemable for rewards.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Strategy Crepes and Waffles. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
